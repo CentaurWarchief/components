@@ -6,6 +6,7 @@ import StepperDocs from './StepperDocs';
 import SelectDocs from './SelectDocs';
 import CheckboxDocs from './CheckboxDocs';
 import RadioDocs from './RadioDocs';
+import LabelRadioDocs from './LabelRadioDocs';
 import LoaderDocs from './LoaderDocs';
 
 const Docs = () =>
@@ -16,6 +17,7 @@ const Docs = () =>
     <SelectDocs />
     <CheckboxDocs />
     <RadioDocs />
+    <LabelRadioDocs />
     <LoaderDocs />
   </div>;
 

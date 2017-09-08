@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Radio, Checkbox } from '../src';
+import { LabledRadio, Checkbox } from '../src';
 
-export default class RadioDocs extends Component {
+export default class LabelRadioDocs extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      label: 'Selecteroni',
       checked: false,
       disabled: false,
       name: 'Radio name',
@@ -24,11 +25,12 @@ export default class RadioDocs extends Component {
       <section className="section">
         <div className="row">
           <div className="col-md-6">
-            <h2>Radio</h2>
+            <h2>LabledRadio</h2>
             <p>I&apos;m radioing this in</p>
           </div>
           <div className="col-md-6">
-            <Radio
+            <LabledRadio
+              label={this.state.label}
               name={this.state.name}
               checked={this.state.checked}
               disabled={this.state.disabled}
@@ -40,7 +42,8 @@ export default class RadioDocs extends Component {
           <div className="col-md-6">
             {/* eslint-disable react/jsx-indent */}
             <pre className="tw-docs-code">
-              {`<Radio
+              {`<LabledRadio
+  label={"${this.state.label}"}
   name={"${this.state.name}"}
   checked={${this.state.checked}}
   disabled={${this.state.disabled}}
@@ -50,6 +53,13 @@ export default class RadioDocs extends Component {
             {/* eslint-enable react/jsx-indent */}
           </div>
           <div className="col-md-6">
+            <input
+              type="text"
+              value={this.state.label}
+              onChange={this.createEventStateLink('label')}
+              placeholder="Radio label"
+              className="form-control"
+            />
             <div className="m-t-3" />
             <input
               type="text"

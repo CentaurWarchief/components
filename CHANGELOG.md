@@ -1,3 +1,14 @@
+# v1.0.0
+## Updates `Radio` component and creates substitute `LabledRadio` component
+
+The `Radio` component has a different style than the angular one, as it has a label wrapping it.
+The label has been removed and needs to be added per Radio component as per necessity.
+
+A substitute component, to facilitate migrations, has been created and works exactly the same as the previous `Radio`,
+it is called `LabledRadio`.
+
+In order to migrate either use the `LabledRadio` instead of the existin `Radio` or add the label manually in your project.
+
 # v0.4.0
 ## Adds initial `Stepper` component
 

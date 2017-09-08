@@ -9,17 +9,12 @@ describe('Radio', () => {
 
   beforeEach(() => {
     props = {
-      label: 'hello, i am a radio',
       name: 'radio name',
       onChange: jest.fn(),
       checked: false,
       disabled: false,
     };
     component = shallow(<Radio {...props} />);
-  });
-
-  it('displays the given label', () => {
-    expect(component.text()).toEqual(props.label);
   });
 
   it('keeps a hidden input with the given name', () => {
