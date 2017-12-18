@@ -1,3 +1,7 @@
+# v1.0.1
+## Increase the size of the stepper tooltips
+Increased the max width to 300px from 200px.
+
 # v1.0.0
 ## Allow all steps to be clickable in stepper instead of only the previous ones
 
